@@ -3,8 +3,6 @@ import agenciabd, {guardar,consultar,crearEtiqueta} from './funciones.js';
 //Inndicamos el nombre de la base de datos "Tineda", la tabla "clientes"
 //y sus atributos ++id(autoincremental), nombre, telefono y descripción.
 let bd=agenciabd("Agencia", {clientes:`++id, nombre, email, telefono,descripcion`});
-
-
 //recuperando inputs del formulario
 const clave_prod = document.getElementById("clave");
 const nombre_prod = document.getElementById("nombre");
@@ -24,15 +22,11 @@ const btGuardar=document.getElementById("guardar");
 const btModificar=document.getElementById("modificar");
 const btEliminarTodo=document.getElementById("eliminar-todo");
 
-
 //visualizando datos registrados 
 window.onload=() =>{
 
 cargarTabla();
 }
-
-
-
 //Evento click para guardar
 btGuardar.onclick=(evento)=>{
     //Se enviar los datos del formulario a la función guardar del archivo funciones.js
@@ -54,8 +48,6 @@ btGuardar.onclick=(evento)=>{
    
 }
 }
-
-
 //Evento click para guardar cambios
 btModificar.onclick=(evento)=>{
     //Se recupera el id del producto a modificar
@@ -88,8 +80,6 @@ btModificar.onclick=(evento)=>{
    
     
 }
-
-
 //Evento click para  eliminar todo
 btEliminarTodo.onclick=()=>{
     
@@ -101,7 +91,6 @@ btEliminarTodo.onclick=()=>{
        location.reload();
       
 }
-
 //Encagado de consultar los clientes y enviarlos al html
 function cargarTabla(){
     const tbody =document.getElementById("tbody");
@@ -141,7 +130,6 @@ function cargarTabla(){
 })
 
 }
-
 function btnEditar(evento) {
     let id=parseInt(evento.target.dataset.id);
    
@@ -154,7 +142,6 @@ function btnEditar(evento) {
 
     })
 }
-
 function btnEliminar(evento) {
     let id=parseInt(evento.target.dataset.id);
    console.log(id);

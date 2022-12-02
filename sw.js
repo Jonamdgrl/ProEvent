@@ -4,7 +4,6 @@ const CACHE_ESTATICO ='Estatico-1';
 const CACHE_INMUTABLE ='Inmutable-1';
 //Indicamos que es lo que debe de pasar durante el proceso de instalación del Service Worker
 self.addEventListener('install', evento=>{
-    /Promesa que crea el proceso de creación del espacio en cache y agrega los archivos necesarios para cargar nuestra aplicación/
     const promesa = caches.open(CACHE)
         .then(cache=>{
             return cache.addAll([
