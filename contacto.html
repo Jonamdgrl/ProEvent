@@ -82,17 +82,13 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Email:</label>
+                  <label>Servicio:</label>
                   <input type="text" class="form-control" id="email" />
                 </div>
       
-                <div class="form-group">
-                  <label>Teléfono:</label>
-                  <input type="text" class="form-control" id="costo" />
-                </div>
       
                 <div class="form-group">
-                  <label>Mensaje:</label>
+                  <label>Escribe tu opinion:</label>
                   <textarea
                     rows="5"
                     cols="5"
@@ -108,6 +104,76 @@
                     class="btn btn-success btn-xl"            
                     id="guardar"
                   />
+
+              
+              </div>
+            </div>
+          </form>
+          </div>
+          <br></br>
+          <!-- Default table -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h6 class="panel-title">
+                <i class="icon-table2"></i> Productos Registrados
+              </h6>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Servicio</th>
+                    <th>Comentario</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                  <!--<tr>
+                    <td>1</td>
+                    <td>Chocolate</td>
+                    <td>23</td>
+                    <td>Sin azucar</td>
+    
+                    <td>
+                      <a
+                        href="#"
+                        class="btn btn-default btn-icon btn-xs tip"
+                        title="Edit entry"
+                        ><i class="icon-pencil"></i
+                      ></a>
+                    </td>
+                    <td>
+                      <a
+                        href="#"
+                        class="btn btn-default btn-icon btn-xs tip"
+                        title="Edit entry"
+                        ><i class="icon-minus"></i
+                      ></a>
+                    </td>
+                  </tr>-->
+                </tbody>
+              </table>
+            </div>
+            <div class="form-group">
+              <center id="siRegistros" />
+            </div>
+          </div>
+          <!-- /default table -->
+          <!-- /vertical form outside panel -->
+        </div>
+        <!-- /page content -->
+    
+        <!--  MAIN.JS ES EL ARECHIVO DONDE ENCUENTRAN LAS FUNCIONES DE BASE DE DATOS -->
+        <script src="js/main.js" type="module"></script>
+    
+        <!-- API DEXIE PARA EL MANEJO DE LA BASE DE DATOS-->
+        <script
+          src="js/dexie.min.js"
+          integrity="sha512-ZxOA8l07uAOW9hOwLustU8G5Pa9WGUplctjW6OSPYT9VZiS6PzEX7tJdZvUQLswakTUkACm5/rykzrDhds2TJQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
 
                 </div>
               </div>
@@ -164,4 +230,5 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
+</html>
 </html>
