@@ -1,6 +1,6 @@
 
 
-/*var url=window.location.href;
+var url=window.location.href;
 var ubicaciónSw='/ProEvent/sw.js';
 
 if (navigator.serviceWorker){
@@ -9,9 +9,9 @@ if (navigator.serviceWorker){
         ubicaciónSw='/sw.js';
     }
     navigator.serviceWorker.register(ubicaciónSw);
-   }*/
+   }
 
-   if (navigator.serviceWorker){
+   /*if (navigator.serviceWorker){
     //Registramos el sw indicando la ubicación del archivo
    navigator.serviceWorker.register("/sw.js");
-   }
+   }*/
