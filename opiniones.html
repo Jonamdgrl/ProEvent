@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PROEVENT</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/PROEVENT LOGO1.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/estilo.css" rel="stylesheet" />
+        <link rel="manifest" href="manifest.json"/>
+    </head>
+    <body id="index.html">
+        <script src="js/app.js"></script>
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="/ProEvent/assets/img/proevent.png"  width="100" height="100" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opiniones.html">Opiniones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead4">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">DEJANOS SABER COMO FUE TU EXPERIENCIA CON NOSOTROS</div>
+            </div>
+        </header>
+<!-- Contact-->
+<section class="page-section bg-light" id="contacto">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">OPINIONES</h2>
+            <h3 class="section-subheading text-muted">Queremos saber como fue tu experiencia al contratar nuestros servicios . Dejanos tu comentario para que mas gente pueda saber y conocer las opiniones acerca de nuestros servicios como agencia de fotografia y video.<br></br>Para ello completa la suguiente informacion.</h3>
+        </div>
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- * * SB Forms Contact Form * *-->
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- This form is pre-integrated with SB Forms.-->
+        <!-- To make this form functional, sign up at-->
+        <!-- https://startbootstrap.com/solution/contact-forms-->
+        <!-- to get an API token!-->
+    
+        <body>
+          <!-- Page content -->
+          <div class="page-content">
+            <!-- Page header -->
+            <div class="page-header">
+              <div class="page-title">
+               
+              </div>
+            </div>
+            <!-- /page header -->
+      
+            <!-- Vertical form outside panel -->
+      <form role="form">
+        <div class="block">
+         
+
+
+
+          <div class="form-group">
+            <label>Nombre:</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+
+          <div class="form-group">
+            <label>Tipo Servicio:</label>
+            <input type="text" class="form-control" id="servicio" />
+          </div>
+
+          <div class="form-group">
+            <label>Descripción:</label>
+            <textarea
+              rows="5"
+              cols="5"
+              class="form-control"
+              id="descripcion"
+            ></textarea>
+          </div>
+
+          <br></br>
+          <div class="form-actions text-center  ">
+            <input
+              type="button"
+              value="ENVIAR"
+              class="btn btn-success btn-xl"            
+              id="guardar"
+            />
+              <br></br>
+              <!-- Default table -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">
+            <i class="icon-table2"></i> Conocer las opiniones de nuestros clientes...
+          </h6>
+        </div>
+        <div id="apartado1">
+        <div class="container">
+          <table class="table">
+             
+              <thead>
+                <th></th>
+                <th>Nombre</th>
+                <th>Tipo Servicio</th>
+                <th>Comentario</th>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+
+        <div class="form-group">
+          <center id="siRegistros" />
+        </div>
+      </div>
+      <!-- /default table -->
+      <!-- /vertical form outside panel -->
+    </div>
+    <!-- /page content -->
+
+    <!--  MAIN.JS ES EL ARECHIVO DONDE ENCUENTRAN LAS FUNCIONES DE BASE DE DATOS -->
+    <script src="js/main.js" type="module"></script>
+
+    <!-- API DEXIE PARA EL MANEJO DE LA BASE DE DATOS-->
+    <script
+      src="js/dexie.min.js"
+      integrity="sha512-ZxOA8l07uAOW9hOwLustU8G5Pa9WGUplctjW6OSPYT9VZiS6PzEX7tJdZvUQLswakTUkACm5/rykzrDhds2TJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+   
+</body>
+  </head>
+      </form></div></body></div></section>
+
+<!-- Footer-->
+<footer class="footer py-4">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-end"></div>
+          <div class="col-lg-4 my-3 my-lg-0">
+              <p>Copyright &copy; Agencia de Fotografia y Video 2022</p>
+              <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/?lang=es" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-dark btn-social mx-2" href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="col-lg-4 text-lg-end"></div>
+      </div>
+  </div>
+</footer>
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+       <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
+</html>

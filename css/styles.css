@@ -1943,7 +1943,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-.table {
+/*.table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: #212529;
@@ -2141,7 +2141,7 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-}
+}*/
 .form-label {
   margin-bottom: 0.5rem;
 }
@@ -11888,5 +11888,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   .showcase .showcase-text {
     padding: 7rem;
   }
+  
 }
 
