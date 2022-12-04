@@ -55,9 +55,9 @@ const consultar =(tabla, funcion)=>{
 
    tabla.count((cantidad)=>{
    if(cantidad){
-       tabla.each(cliente=>{
-        cliente=ordenarCampos(cliente);
-        funcion(cliente, index++);
+       tabla.each(producto=>{
+        producto=ordenarCampos(producto);
+        funcion(producto, index++);
        })
     }else{
         funcion(0);
@@ -67,15 +67,15 @@ const consultar =(tabla, funcion)=>{
 }
 
 //definir orden de los campos
-const ordenarCampos = cliente=>{
-    let objcliente={};
-    objcliente={
-        id:cliente.id,
-        nombre:cliente.nombre,
-        servicio:cliente.servicio,
-        descripcion:cliente.descripcion
+const ordenarCampos = producto=>{
+    let objProducto={};
+    objProducto={
+        id:producto.id,
+        nombre:producto.nombre,
+        servicio:producto.precio,
+        descripcion:producto.descripcion
     }
-    return objcliente;
+    return objProducto;
 }
 
 //Creando etiquetas para agregar en la página
