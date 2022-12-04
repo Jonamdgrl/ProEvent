@@ -2,11 +2,11 @@ import tiendabd, {guardar,consultar,crearEtiqueta} from './funciones.js';
 
 //Inndicamos el nombre de la base de datos "Tineda", la tabla "productos"
 //y sus atributos ++id(autoincremental), nombre, precio y descripción.
-let bd=tiendabd("Tienda", {productos:`++id,nombre, precio,descripcion`});
+let bd=tiendabd("Tienda", {productos:`nombre, precio,descripcion`});
 
 
 //recuperando inputs del formulario
-//const clave_prod = document.getElementById("clave");
+const clave_prod = document.getElementById("clave");
 const nombre_prod = document.getElementById("nombre");
 const servicio_prod = document.getElementById("servicio");
 const desc_prod = document.getElementById("descripcion");
