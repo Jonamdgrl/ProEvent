@@ -39,7 +39,7 @@ self.addEventListener('install', evento=>{
                 'assets/img/nosotros/3.jpg',
                 'assets/img/nosotros/4.jpg',
                 'assets/img/nosotros/boda3.jpg',
-                'opiniones.html',
+                'comunidad.html',
                 'assets/img/contacto/boda4.jpg',
                 'css/styles.css',
                 'assets/img/error_conexion.jpeg',
