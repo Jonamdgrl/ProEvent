@@ -1,12 +1,12 @@
-import tiendabd, {guardar,consultar,crearEtiqueta} from './funciones.js';
+import agenciabd, {guardar,consultar,crearEtiqueta} from './funciones.js';
 
 //Inndicamos el nombre de la base de datos "Tineda", la tabla "productos"
-//y sus atributos ++id(autoincremental), nombre, precio y descripción.
-let bd=tiendabd("Tienda", {productos:`nombre, precio,descripcion`});
+//y sus atributos ++id(autoincremental), nombre, servicio y descripción.
+let bd=agenciabd("agencia", {productos:`++id,nombre, servicio,descripcion`});
 
 
 //recuperando inputs del formulario
-//const clave_prod = document.getElementById("clave");
+const clave_prod = document.getElementById("clave");
 const nombre_prod = document.getElementById("nombre");
 const servicio_prod = document.getElementById("servicio");
 const desc_prod = document.getElementById("descripcion");
@@ -37,7 +37,7 @@ btGuardar.onclick=(evento)=>{
     //Se enviar los datos del formulario a la función guardar del archivo funciones.js
      let flag =guardar(bd.productos, {
      nombre:nombre_prod.value,
-     precio:servicio_prod.value,
+     servicio:servicio_prod.value,
      descripcion:desc_prod.value
  });
  
@@ -61,7 +61,7 @@ btModificar.onclick=(evento)=>{
        //si exiete el id se enviar los datos del formulario a la función guardar del archivo funciones.js
         bd.productos.update(id,{
             nombre:nombre_prod.value,
-            precio:servicio_prod.value,
+            servicio:servicio_prod.value,
             descripcion:desc_prod.value
         }).then((resultado)=>{
             if(resultado){
@@ -91,7 +91,7 @@ btEliminarTodo.onclick=()=>{
       //se ejecuta el borrado de toda la base de datos y se crea nuevamente pero vacia
     
        bd.delete();
-       bd=tiendabd("Tienda", {productos:`++id,nombre, precio,descripcion`});
+       bd=agenciabd("agencia", {productos:`++id,nombre, servicio,descripcion`});
        bd.open();
        location.reload();
       
@@ -112,7 +112,7 @@ function cargarTabla(){
               for(const atributo in productos){
                
                 crearEtiqueta("td",tr, (td)=>{
-                  td.textContent =productos.precio===productos[atributo]?`$ ${productos[atributo]}`:productos[atributo];
+                  td.textContent =productos.servicio===productos[atributo]?`$ ${productos[atributo]}`:productos[atributo];
                 })
             }
             
@@ -130,7 +130,7 @@ function cargarTabla(){
     bd.productos.get(id, producto=>{
       clave_prod.value=producto.id||0;
       nombre_prod.value=producto.nombre||"";
-      servicio_prod.value=producto.precio||"";
+      servicio_prod.value=producto.servicio||"";
       desc_prod.value=producto.descripcion||"";
 
     })
