@@ -112,7 +112,7 @@ function cargarTabla(){
               for(const atributo in clientes){
                
                 crearEtiqueta("td",tr, (td)=>{
-                  td.textContent =clientes.servicio===clientes[atributo]?`${clientes[atributo]}`:clientes[atributo];
+                  td.textContent =clientes.servicio===clientes[atributo]?`$ {clientes[atributo]}`:clientes[atributo];
                 })
             }
             
