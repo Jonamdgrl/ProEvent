@@ -6,7 +6,7 @@ let bd=tiendabd("Tienda", {productos:`++id,nombre, precio,descripcion`});
 
 
 //recuperando inputs del formulario
-const clave_prod = document.getElementById("clave");
+//const clave_prod = document.getElementById("clave");
 const nombre_prod = document.getElementById("nombre");
 const servicio_prod = document.getElementById("servicio");
 const desc_prod = document.getElementById("descripcion");
